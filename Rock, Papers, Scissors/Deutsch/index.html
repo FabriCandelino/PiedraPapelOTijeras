@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Schere, Stein oder Papier</title>
+</head>
+<body>
+    <a href="#"></a>
+    <header>
+        <div class="main">
+            <h1><b>Schere</b>, <b>Stein</b> oder <b>Papier</b></h1>
+    
+            <h2>Entwickelt von <span class="devpd-by">Fabricio Candelino</span></h2>
+    
+            <button class="jugar">Play</button>
+            
+            <a class="disabled" href="javascript:location.reload()">Press here to play again!</a>
+        </div>
+    </header>
+
+    <div class="rules">
+        <h3>How to play:</h3>
+
+        <p>First you have to choose an <b>Ítem</b> by writing it's name.</p>
+
+        <p>According to what your artificial oppponent (Bot) choose by random, you will get points or not.</p>
+
+        <p><b>Rock</b> beats <b>Scissors</b>,<br /> because it breaks them.</p>
+
+        <p><b>Paper</b> beats <b>Rocks</b>,<br /> because it wraps it.</p>
+
+        <p>Lastly, <b>Scissors</b> beats <b>Paper</b>,<br /> becuse they crop it.</p>
+    </div>
+
+    <h5>*On development*</h5>
+
+    <div class="game-cont">
+        <div>
+            <h4>Selecciona un <b>Ítem</b></h4>
+            <ul>
+                <li><button><img class="rock" src="assets/rock.svg" alt="Piedra">Piedra</button></li>
+                <li><button><img class="paper" src="assets/paper.svg" alt="Papel">Papel</button></li>
+                <li><button><img class="scissors" src="assets/scissors.svg" alt="Tijeras">Tijeras</button></li>
+            </ul>
+        </div>
+        <div class="marker">
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

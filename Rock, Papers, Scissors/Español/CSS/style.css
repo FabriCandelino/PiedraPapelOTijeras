@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    height: 100%;
+    background-color: #222;
+    color: #f0eff4;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.main {
+    display: flex;
+    padding: 0 10px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bb7e5d;
+}
+
+.main h1, .main button {
+    margin: 25px 0;
+}
+
+.devpd-by {
+    position: static;
+    background: linear-gradient(120deg, hsla(1, 79%, 48%, 1) 0%, hsla(0, 0%, 13%, 1) 100%);
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    padding: 5px 10px;
+    border: 2px solid #f0eff4;
+    text-decoration: none;
+}
+
+.jugar {
+    width: 200px;
+    height: 75px;
+    text-align: center;
+    border: none;
+    background-color: #1c5d99;
+    color: #f0eff4;
+    font-size: 35px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all linear 0.1s;
+    transition-property: background-color, box-shadow;
+}
+
+.jugar:hover {
+    background-color: #cc0033;
+    box-shadow: 0 4px 4px 4px rgba(34, 34, 34, 0.4);
+}
+
+h5 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 100;
+    font-style: italic;
+    background-color: #000;
+    justify-self: flex-end;
+}
+
+.rules {
+    width: 40%;
+    padding: 10px;
+    margin: 25px auto 0 auto;
+    border: 2px dashed #f0eff4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rules p {
+    margin: 10px 0;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+b {
+    padding: 2px 2px;
+    color: #222;
+    background-color: yellow;
+}
+
+.item-slctr ul li button {
+    width: 40px;
+}
+
+.rock, .paper, .scissors {
+    width: 100%;
+}
+
+.disabled {
+    display: none;
+}
+
+.update-page {
+    display: inline-block;
+    margin: 0 0 20px 0;
+    font-size: 15px;
+    color: #f0eff4;
+    padding: 10px 15px;
+    background-color: #f0eff4;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 3px solid;
+    animation: animationColor 15s alternate infinite;
+    transition: linear 0.1s;
+    transition-property: background-color, color, border-color;
+}
+
+.update-page:hover {
+    animation: none;
+    background-color: transparent;
+    color: #f0eff4;
+    border-color: #f0eff4;
+}
+
+@keyframes animationColor {
+    0% {
+        color: #f95b4e;
+        border-color: #f95b4e;
+    }
+    10% {
+        color: #6a6f00;
+        border-color: #6a6f00;
+    }
+    20% {
+        color: #404040;
+        border-color: #404040;
+    }
+    30% {
+        color: #142b47;
+        border-color: #142b47;
+    }
+    40% {
+        color: #002b56;
+        border-color: #002b56;
+    }
+    50% {
+        color: #1b4418;
+        border-color: #1b4418;
+    }
+    60% {
+        color: #b12619;
+        border-color: #b12619;
+    }
+    70% {
+        color: #222222;
+        border-color: #222222;
+    }
+    80% {
+        color: #0e3458;
+        border-color: #0e3458;
+    }
+    90% {
+        color: #6a511a;
+        border-color: #6a511a;
+    }
+    100% {
+        color: #bbcde5;
+        border-color: #bbcde5;
+    }
+}
+
+.game-cont {
+    display: none;
+}
+
+@media(max-width: 500px) {
+    .rules {
+        width: 60%;
+    }
+}
+
+@media(max-width: 458px) {
+    h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .rules {
+        width: 60%;
+    }
+}
